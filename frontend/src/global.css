@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    cursor: pointer;
+}
+
+.register-container{
+    display: flex;
+    flex:1;
+    max-width: 850px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container section{
+    display: flex;
+    flex: 1;
+    box-shadow: 1px 1px 100px 0px rgba(0, 0, 0, 0.6);
+    padding: 60px;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.register-container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-container .info .title{
+    height: 60px;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.register-container .info h1{
+    margin-bottom: 30px;
+}
+
+.register-container .info span{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.register-container .info .icon-link{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.register-container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+}
+
+.register-container form input{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.register-container form .input-group{
+    display: flex;
+}
+
+.register-container form .input-group input + input{
+    margin-left: 5px;
+    width: 50px;
+}
+
+.register-container form .input-group button + button{
+    margin-left: 5px;
+}
+
+.register-container form button{
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+}
+
+.register-container form textarea{
+    padding: 10px;
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 10px;
+    min-height: 110px;
+
+}
+
+.register-container form button[type='submit']{
+    background-color: rgb(226, 8, 8);
+}
+
+.register-container form button:hover{
+    opacity: 0.7;
+}
+
+.register-container form button:active{
+    filter: brightness(50%);
+    opacity: 1;
+}
