@@ -18,7 +18,7 @@ module.exports = {
             whatsapp,
             city,
             uf
-        }).first();
+        });
 
         return res.send(ong);
     },
